@@ -6,4 +6,14 @@ CONTINUED FROM
 
 ~/Documents/DEV/version-controlled/edu/Meta Front-End Developer Professional Certificate/08 -- Front-End Developer Capstone/__NOTES.txt
 
+################################################################################
+
+Exercise: Wireframing the project
+
+    Use Figma.
+
+    Follow the instructions at:
+        https://www.coursera.org/learn/meta-front-end-developer-capstone/supplement/Fx5mL/exercise-wireframing-the-project
+
+
 
