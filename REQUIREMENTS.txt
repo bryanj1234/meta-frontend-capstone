@@ -8,6 +8,15 @@ CONTINUED FROM
 
 ################################################################################
 
+Scenario
+========
+Little Lemon has faced difficulties with the reserve-a-table feature on its website.
+The feature doesn’t exist in the navigation bar
+    and there is no specific button on its homepage to highlight this option.
+In this exercise, you will create a wireframe of the homepage incorporating this feature.
+
+################################################################################
+
 Exercise: Wireframing the project
 
     Use Figma.
@@ -15,5 +24,15 @@ Exercise: Wireframing the project
     Follow the instructions at:
         https://www.coursera.org/learn/meta-front-end-developer-capstone/supplement/Fx5mL/exercise-wireframing-the-project
 
+    Step 1: List the client's requirements
 
+        Content blocks
+        ==============
+
+            * About Little Lemon
+            * Highlights and specials
+            * Descriptions and photos of dishes
+            * Navigation bar
+            * Footer
+            * Testimonials
 
