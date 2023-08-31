@@ -60,3 +60,14 @@ Exercise: Wireframing the project
         Reservations
         Order online
         Login
+
+    Step 4: Design the Hero Section content block
+
+        The Little Lemon name
+        Where it is located
+        A brief description of what type of food it offers
+        Image
+        Button to book a table online
+
+            We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
+
