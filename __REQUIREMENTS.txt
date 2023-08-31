@@ -66,8 +66,26 @@ Exercise: Wireframing the project
         The Little Lemon name
         Where it is located
         A brief description of what type of food it offers
+            We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
         Image
         Button to book a table online
 
-            We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
+            FIXME: Once clicked, the user is brought to another page where they can carry this task out.
+
+
+    Step 5: Design the Highlights content block
+
+        Specials
+
+        3 dishes
+            Name of the dish
+            Dish description
+            Price
+            Image of the dish
+
+        FIXME: Note that when a dish is clicked, the user is taken to another screen and that this highlights section is scrollable horizontally in order to see further items.
+
+        Add a button so the user can go to the order online page.
+
+            FIXME: Once clicked, the user is brought to another page where they can carry this task out.
 
