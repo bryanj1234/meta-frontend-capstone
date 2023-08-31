@@ -51,3 +51,12 @@ Exercise: Wireframing the project
             About the Little Lemon restaurant
             Footer
 
+    Step 3: Design the Navigation Bar content block
+
+        Logo
+        Home
+        About
+        Menu
+        Reservations
+        Order online
+        Login
