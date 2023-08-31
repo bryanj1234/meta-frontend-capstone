@@ -129,5 +129,12 @@ Exercise: Wireframing the project
 
 Exercise: Designing components
 
+    Step 1: Create the component and variants
+
+        Create a 1440 x 800 frame
+        In this frame, create a rectangle that is 400w x 80h.
+        Change the fill color to #EDEFEE.
+        Add rounded corners, with a radius of 8, and give it a drop shadow effect.
+
 
 
