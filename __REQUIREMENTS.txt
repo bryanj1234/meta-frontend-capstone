@@ -114,3 +114,7 @@ Exercise: Wireframing the project
         Add a background to separate it from the Highlights content block above.
         Create placeholders for the reviews.
 
+    Step 7: Design the About content block
+
+        Add a text box placeholder.
+        Add image placeholders.
