@@ -10,14 +10,16 @@ CONTINUED FROM
 
 Scenario
 ========
-Little Lemon has faced difficulties with the reserve-a-table feature on its website.
-The feature doesn’t exist in the navigation bar
-    and there is no specific button on its homepage to highlight this option.
-In this exercise, you will create a wireframe of the homepage incorporating this feature.
+    Little Lemon has faced difficulties with the reserve-a-table feature on its website.
+    The feature doesn’t exist in the navigation bar
+        and there is no specific button on its homepage to highlight this option.
 
 ################################################################################
 
 Exercise: Wireframing the project
+
+    In this exercise, you will create a wireframe
+        of the homepage incorporating this feature.
 
     Use Figma.
 
@@ -36,3 +38,15 @@ Exercise: Wireframing the project
             * Footer
             * Testimonials
 
+    Step 2: Create the frame and grid
+
+        Create a 1440 x 2900 frame
+        Add a 12-column layout grid to the frame.
+
+        Construct content blocks using rectangles and name the sections.
+            Navigation bar
+            Hero section that showcases the Little Lemon restaurant
+            Highlights section showing the week’s specials
+            Testimonials
+            About the Little Lemon restaurant
+            Footer
