@@ -118,3 +118,11 @@ Exercise: Wireframing the project
 
         Add a text box placeholder.
         Add image placeholders.
+
+    Step 8: Design the Footer Navigation content block
+
+        First add a background, followed by the following content:
+            Logo
+            Doormat navigation (links to other pages)
+            Contact details
+            Social media links
