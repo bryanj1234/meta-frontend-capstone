@@ -89,22 +89,28 @@ Exercise: Wireframing the project
 
             FIXME: Once clicked, the user is brought to another page where they can carry this task out.
 
-        Greek Salad
-        The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.
-        $12.99
+                    Greek Salad
+                    The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.
+                    $12.99
 
-        Brushetta
-        Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. Toppings of tomato, veggies, beans, cured pork, or cheese are examples of variations. In Italy, a brustolina grill is frequently used to create bruschetta.
-        $7.99
+                    Brushetta
+                    Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. Toppings of tomato, veggies, beans, cured pork, or cheese are examples of variations. In Italy, a brustolina grill is frequently used to create bruschetta.
+                    $7.99
 
-        Grilled Fish
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.
-        $20.00
+                    Grilled Fish
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.
+                    $20.00
 
-        Pasta
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet nec in ornare.
-        $18.99
+                    Pasta
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet nec in ornare.
+                    $18.99
 
-        Lemon Dessert
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio enim vitae.
-        $6.99
+                    Lemon Dessert
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio enim vitae.
+                    $6.99
+
+    Step 6: Design the Testimonials content block
+
+        Add a background to separate it from the Highlights content block above.
+        Create placeholders for the reviews.
+
