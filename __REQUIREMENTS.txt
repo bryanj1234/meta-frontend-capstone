@@ -126,3 +126,8 @@ Exercise: Wireframing the project
             Doormat navigation (links to other pages)
             Contact details
             Social media links
+
+Exercise: Designing components
+
+
+
