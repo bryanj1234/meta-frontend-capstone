@@ -149,4 +149,6 @@ Exercise: Designing components
 
         Etc...
 
+Exercise: Applying design fundamentals in Figma
+
 
