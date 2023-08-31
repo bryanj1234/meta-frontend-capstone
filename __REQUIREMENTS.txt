@@ -147,4 +147,6 @@ Exercise: Designing components
 
         Group all the elements and navigate to the top menu bar to create a component and a variant. These are encompassed in a purple dashed container.
 
+        Etc...
+
 
