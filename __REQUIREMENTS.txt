@@ -151,4 +151,10 @@ Exercise: Designing components
 
 Exercise: Applying design fundamentals in Figma
 
+    FIXME: TODO
+
+    What is the point of doing this...
+
+    It's just busywork.
+
 
