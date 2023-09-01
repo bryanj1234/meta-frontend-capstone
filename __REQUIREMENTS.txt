@@ -16,6 +16,10 @@ Scenario
 
 ################################################################################
 
+################################################################################
+!!! NOTE: WIREFRAMING STARTS HERE !!!
+################################################################################
+
 Exercise: Wireframing the project
 
     In this exercise, you will create a wireframe
@@ -156,5 +160,20 @@ Exercise: Applying design fundamentals in Figma
     What is the point of doing this...
 
     It's just busywork.
+
+Recap: Semantic HTML
+
+    The role attribute
+
+    EX:
+        <a href="/book" role="button">Book a table</a>
+
+################################################################################
+!!! NOTE: CODING STARTS HERE !!!
+################################################################################
+
+Exercise: Setting up the HTML document
+
+
 
 
