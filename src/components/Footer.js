@@ -1,7 +1,7 @@
-export const Footer = () => {
+export const Footer = (props) => {
   return (
     <footer>
-      FOOTER
+      <img src={props.logo} alt={"logo"}/>
     </footer>
   )
 }

@@ -1,15 +1,16 @@
 import './App.css';
-import {Header, Navbar} from './components/Header';
+import {Header} from './components/Header';
 import {Main, Section} from './components/Main';
 import {Footer} from './components/Footer';
+import logo from './assets/logo.svg';
 
 function App() {
   return (
     <>
 
-      <Header>
-        <Navbar>
-        </Navbar>
+      <Header
+        logo={logo}
+      >
       </Header>
 
       <Main>
@@ -19,7 +20,9 @@ function App() {
         <Section>ABOUT</Section>
       </Main>
 
-      <Footer>
+      <Footer
+        logo={logo}
+      >
       </Footer>
 
     </>

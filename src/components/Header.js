@@ -1,4 +1,4 @@
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <nav>
       NAV
@@ -9,8 +9,9 @@ export const Navbar = () => {
 export const Header = (props) => {
   return (
     <header>
-      HEADER
-      {props.children}
+      <img src={props.logo} alt={"logo"}/>
+      <Navbar>
+      </Navbar>
     </header>
   )
 }
