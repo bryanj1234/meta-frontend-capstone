@@ -4,6 +4,8 @@ import {Main, Section} from './components/Main';
 import {Footer} from './components/Footer';
 import logo from './assets/logo.svg';
 
+// BRYAN FIXME: USE CONTEXT API FOR LOGO.
+
 function App() {
   return (
     <>

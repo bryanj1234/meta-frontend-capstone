@@ -175,5 +175,9 @@ Recap: Semantic HTML
 Exercise: Setting up the HTML document
 
 
+BRYAN FIXME: USE CONTEXT API FOR LOGO.
 
-
+SEE: React application
+        "ex-context-api"
+     from
+        course 06 -- Advanced REact
