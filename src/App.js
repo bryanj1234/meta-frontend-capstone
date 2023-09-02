@@ -1,29 +1,21 @@
 import './App.css';
+import {Header} from './components/Header';
+import {Main} from './components/Main';
+import {Footer} from './components/Footer';
 
 function App() {
   return (
     <>
 
-      <header>
-        HEADER
-        <nav>
-          NAV
-        </nav>
-      </header>
+      <Header></Header>
 
-      <main>
-        <section>HERO</section>
-        <section>SPECIALS</section>
-        <section>TESTIMONIALS</section>
-        <section>ABOUT</section>
-      </main>
+      <Main></Main>
 
-      <footer>
-        FOOTER
-      </footer>
+      <Footer></Footer>
 
     </>
   );
 }
 
 export default App;
+
