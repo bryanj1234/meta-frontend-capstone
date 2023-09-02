@@ -1,15 +1,22 @@
 import './App.css';
-import {Header} from './components/Header';
-import {Main} from './components/Main';
+import {Header, Navbar} from './components/Header';
+import {Main, Section} from './components/Main';
 import {Footer} from './components/Footer';
 
 function App() {
   return (
     <>
 
-      <Header></Header>
+      <Header>
+        <Navbar></Navbar>
+      </Header>
 
-      <Main></Main>
+      <Main>
+        <Section>HERO</Section>
+        <Section>SPECIALS</Section>
+        <Section>TESTIMONIALS</Section>
+        <Section>ABOUT</Section>
+      </Main>
 
       <Footer></Footer>
 

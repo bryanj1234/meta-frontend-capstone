@@ -1,10 +1,14 @@
-export const Main = () => {
+export const Section = (props) => {
+  return (
+    <section>{props.children}</section>
+  )
+}
+
+export const Main = (props) => {
   return (
     <main>
-      <section>HERO</section>
-      <section>SPECIALS</section>
-      <section>TESTIMONIALS</section>
-      <section>ABOUT</section>
+      MAIN
+      {props.children}
     </main>
   )
 }

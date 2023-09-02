@@ -1,10 +1,16 @@
-export const Header = () => {
+export const Navbar = () => {
+  return (
+    <nav>
+      NAV
+    </nav>
+  )
+}
+
+export const Header = (props) => {
   return (
     <header>
       HEADER
-      <nav>
-          NAV
-      </nav>
+      {props.children}
     </header>
   )
 }
