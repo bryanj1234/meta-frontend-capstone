@@ -8,7 +8,8 @@ function App() {
     <>
 
       <Header>
-        <Navbar></Navbar>
+        <Navbar>
+        </Navbar>
       </Header>
 
       <Main>
@@ -18,7 +19,8 @@ function App() {
         <Section>ABOUT</Section>
       </Main>
 
-      <Footer></Footer>
+      <Footer>
+      </Footer>
 
     </>
   );
