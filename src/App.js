@@ -5,6 +5,7 @@ import {Footer} from './components/Footer';
 import logo from './assets/logo.svg';
 
 // BRYAN FIXME: USE CONTEXT API FOR LOGO.
+// SEE: https://react.dev/learn/passing-data-deeply-with-context
 
 function App() {
   return (

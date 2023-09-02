@@ -181,3 +181,5 @@ SEE: React application
         "ex-context-api"
      from
         course 06 -- Advanced React
+
+SEE: https://react.dev/learn/passing-data-deeply-with-context
