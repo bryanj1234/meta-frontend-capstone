@@ -2,11 +2,27 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <>
 
-      FIXME::HOMEPAGE
+      <header>
+        HEADER
+        <nav>
+          NAV
+        </nav>
+      </header>
 
-    </div>
+      <main>
+        <section>HERO</section>
+        <section>SPECIALS</section>
+        <section>TESTIMONIALS</section>
+        <section>ABOUT</section>
+      </main>
+
+      <footer>
+        FOOTER
+      </footer>
+
+    </>
   );
 }
 
