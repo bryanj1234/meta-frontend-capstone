@@ -21,8 +21,7 @@ export const Header = () => {
   return (
     <header>
       <img src={GC.logo} alt={"logo"}/>
-      <Navbar links={GC.nav_links}>
-      </Navbar>
+      <Navbar links={GC.nav_links}></Navbar>
     </header>
   )
 }

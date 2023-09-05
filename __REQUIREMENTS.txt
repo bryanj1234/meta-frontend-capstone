@@ -183,3 +183,6 @@ SEE: React application
         course 06 -- Advanced React
 
 SEE: https://react.dev/learn/passing-data-deeply-with-context
+
+CSS GRID CHEAT SHEET:
+    https://www.coursera.org/learn/html-and-css-in-depth/ungradedLab/PP8OK/create-a-grid-layout
