@@ -2,19 +2,17 @@ import './App.css';
 import {Header} from './components/Header';
 import {Main, Section} from './components/Main';
 import {Footer} from './components/Footer';
-import logo from './assets/logo.svg';
+
 
 // BRYAN FIXME: USE CONTEXT API FOR LOGO.
 // SEE: https://react.dev/learn/passing-data-deeply-with-context
 
+
+
 function App() {
   return (
     <>
-
-      <Header
-        logo={logo}
-      >
-      </Header>
+      <Header></Header>
 
       <Main>
         <Section>HERO</Section>
@@ -23,12 +21,10 @@ function App() {
         <Section>ABOUT</Section>
       </Main>
 
-      <Footer
-        logo={logo}
-      >
-      </Footer>
-
+      <Footer></Footer>
     </>
+
+
   );
 }
 

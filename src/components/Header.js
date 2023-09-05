@@ -1,3 +1,6 @@
+import {GlobalContext} from '../GlobalContext';
+import {useContext} from 'react';
+
 const Navbar = () => {
   return (
     <nav>
@@ -6,10 +9,12 @@ const Navbar = () => {
   )
 }
 
-export const Header = (props) => {
+export const Header = () => {
+  const GC = useContext(GlobalContext);
+
   return (
     <header>
-      <img src={props.logo} alt={"logo"}/>
+      <img src={GC.logo} alt={"logo"}/>
       <Navbar>
       </Navbar>
     </header>
