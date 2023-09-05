@@ -1,9 +1,17 @@
 import {useGC} from '../GlobalContext';
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+  const links = props.links;
+  const link_items = links.map(
+    (link) => <li key={link.key}><a href={link.url}>{link.title}</a></li>
+  );
+
   return (
     <nav>
-      NAV
+      <ul>
+          {link_items}
+      </ul>
     </nav>
   )
 }
@@ -13,7 +21,7 @@ export const Header = () => {
   return (
     <header>
       <img src={GC.logo} alt={"logo"}/>
-      <Navbar>
+      <Navbar links={GC.nav_links}>
       </Navbar>
     </header>
   )
