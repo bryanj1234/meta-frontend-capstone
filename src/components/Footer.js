@@ -1,8 +1,7 @@
-import {GlobalContext} from '../GlobalContext';
-import {useContext} from 'react';
+import {useGC} from '../GlobalContext';
 
 export const Footer = () => {
-  const GC = useContext(GlobalContext);
+  const GC = useGC();
 
   return (
     <footer>
