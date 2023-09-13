@@ -61,7 +61,7 @@ header img {
   grid-area: image;
   width:100%;
 
-  filter: drop-shadow(10px 5px 3px #bdbfbe);
+  filter: drop-shadow(10px 5px 3px #cccccc);
 }
 
 header nav {
@@ -171,7 +171,7 @@ main {
   padding: 10px;
   justify-self: center;
 
-  filter: drop-shadow(10px 15px 10px #222222);
+  filter: drop-shadow(10px 15px 10px #444444);
 }
 
 #specials {
@@ -235,6 +235,8 @@ footer img {
   grid-area: image;
   width: min(100%, 100px);
   border-radius: 10px;
+
+  filter: drop-shadow(5px 5px 5px #444444);
 }
 
 #doormat {
