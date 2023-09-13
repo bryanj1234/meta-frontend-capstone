@@ -5,17 +5,17 @@ export const Footer = () => {
 
   const doormat = GC.doormat;
   const doormat_items = doormat.map(
-    (link) => <li class="nav-item" key={link.key}><a href={link.url}>{link.title}</a></li>
+    (link) => <li className="nav-item" key={link.key}><a href={link.url}>{link.title}</a></li>
   );
 
   const contact = GC.contact;
   const contact_items = contact.map(
-    (link) => <li class="nav-item" key={link.key}><a href={link.url}>{link.title}</a></li>
+    (link) => <li className="nav-item" key={link.key}><a href={link.url}>{link.title}</a></li>
   );
 
   const social = GC.social;
   const social_items = social.map(
-    (link) => <li class="nav-item" key={link.key}><a href={link.url}>{link.title}</a></li>
+    (link) => <li className="nav-item" key={link.key}><a href={link.url}>{link.title}</a></li>
   );
 
   return (

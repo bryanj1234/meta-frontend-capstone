@@ -33,6 +33,16 @@ header {
   align-items: center;
 }
 
+@media screen and (max-width: 800px) {
+  header {
+    grid-template-rows: 65px 1fr;
+    grid-template-columns: 232px 1fr;
+    grid-template-areas:
+    "image _1"
+    "nav nav";
+  }
+}
+
 header img {
   grid-area: image;
   width:100%
@@ -110,6 +120,16 @@ footer {
   grid-template-areas:
       "image _2 doormat contact social";
   align-items: top;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 232px 1fr 1fr;
+    grid-template-areas:
+    "image _1 _1"
+    "doormat contact social";
+  }
 }
 
 footer img {
