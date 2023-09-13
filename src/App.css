@@ -26,9 +26,9 @@ header {
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 125px 232px 1fr;
+  grid-template-columns: 50px 232px 10px 1fr;
   grid-template-areas:
-      "_ image nav";
+      "_1 image _2 nav";
   align-items: center;
 }
 
@@ -61,12 +61,12 @@ main {
 
   /* grid-template-rows: 383px 869px 590px 515px; */
   grid-template-rows: 100px 100px 100px 100px;
-  grid-template-columns: 100%;
+  grid-template-columns: 50px 1fr 50px;
   grid-template-areas:
-      "hero"
-      "specials"
-      "testimonials"
-      "about";
+      "_1 hero _2"
+      "_1 specials _2"
+      "_1 testimonials _2"
+      "_1 about _2";
 }
 
 #hero {
@@ -95,10 +95,10 @@ footer {
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 125px 232px 1fr 1fr 1fr;
+  grid-template-columns: 50px 232px 50px 1fr 1fr 1fr;
   grid-template-areas:
-      "_ image doormat contact social";
-  align-items: center;
+      "_1 image _2 doormat contact social";
+  align-items: top;
 }
 
 footer img {
