@@ -24,21 +24,21 @@ export const Footer = () => {
       <img src={GC.logo} alt={"logo"}/>
 
       <div id="doormat">
-        Doormat nav
+        Friends & Partners
         <ul>
             {doormat_items}
         </ul>
       </div>
 
       <div id="contact">
-        Contact
+        Contact Us
         <ul>
             {contact_items}
         </ul>
       </div>
 
       <div id="social">
-        Social
+        Social Media
         <ul>
             {social_items}
         </ul>
