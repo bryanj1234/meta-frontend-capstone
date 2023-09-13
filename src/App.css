@@ -29,7 +29,7 @@ font-family: 'Markazi Text', serif; */
 
 @media screen and (max-width: 900px) {
   #root  {
-    grid-template-rows: 123px 1fr 330px;
+    grid-template-rows: 123px 1fr 350px;
   }
 }
 
@@ -251,7 +251,7 @@ footer {
 
 @media screen and (max-width: 900px) {
   footer {
-    grid-template-rows: 130px 1fr;
+    grid-template-rows: 150px 1fr;
     grid-template-columns: 1.2fr 1fr 1fr;
     grid-template-areas:
     "image image image"
@@ -262,10 +262,16 @@ footer {
 
 footer img {
   grid-area: image;
-  width: min(100%, 100px);
+  width: min(100%, 150px);
   border-radius: 10px;
 
   filter: drop-shadow(5px 5px 5px #444444);
+}
+
+@media screen and (max-width: 900px) {
+  footer img {
+    width: min(100%, 120px);
+  }
 }
 
 #doormat {
