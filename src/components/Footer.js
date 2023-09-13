@@ -24,21 +24,21 @@ export const Footer = () => {
       <img src={GC.lemon} alt={"lemon"}/>
 
       <div id="doormat">
-        Friends & Partners
+        <span className="fl-header">Friends & Partners</span>
         <ul>
             {doormat_items}
         </ul>
       </div>
 
       <div id="contact">
-        Contact Us
+      <span className="fl-header">Contact Us</span>
         <ul>
             {contact_items}
         </ul>
       </div>
 
       <div id="social">
-        Social Media
+      <span className="fl-header">Social Media</span>
         <ul>
             {social_items}
         </ul>
