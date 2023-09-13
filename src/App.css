@@ -33,7 +33,7 @@ header {
   align-items: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   header {
     grid-template-rows: 65px 1fr;
     grid-template-columns: 232px 1fr;
@@ -63,6 +63,8 @@ header nav ul {
 .nav-item {
   justify-content: center;
   list-style-type: none;
+  padding-left:1rem;
+  padding-right:1rem;
 }
 
 main {
@@ -122,19 +124,19 @@ footer {
   align-items: top;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   footer {
     grid-template-rows: 80px 1fr;
-    grid-template-columns: 232px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "image _1 _1"
+    "image image image"
     "doormat contact social";
   }
 }
 
 footer img {
   grid-area: image;
-  width: 100%;
+  width: min(232px, 100%);
 }
 
 #doormat {
