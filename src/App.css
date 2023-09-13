@@ -88,7 +88,7 @@ main {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  background-color: #edefee;
+  background-color: #495e57;
 }
 
 #specials {
@@ -117,14 +117,14 @@ main {
 footer {
   grid-area: footer;
   border-bottom: 1px solid black;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
 
-  background-color: #edefee;
+  background-color: #495e57;
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(0, 50px) 100px 100px 1fr 1fr 1fr minmax(0, 50px);
+  grid-template-columns: minmax(0, 50px) 150px 100px 1fr 1fr 1fr minmax(0, 50px);
   grid-template-areas:
       "_1 image _2 doormat contact social _3";
   align-items: top;
@@ -143,6 +143,7 @@ footer {
 footer img {
   grid-area: image;
   width: 100%;
+  border-radius: 5px;
 }
 
 #doormat {
