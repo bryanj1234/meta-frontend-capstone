@@ -18,6 +18,7 @@ function App() {
           <h2>Detroit</h2>
           <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
           <img src={GC.header_image} alt={"header_image"}/>
+          <span id="btn-reserve">Reserve a table</span>
         </Section>
 
         <Section id="specials">
