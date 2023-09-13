@@ -40,7 +40,7 @@ header {
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(0, 50px) 232px 10px 1fr minmax(0, 50px);
+  grid-template-columns: minmax(10px, 50px) 232px 10px 1fr minmax(10px, 50px);
   grid-template-areas:
       "_1 image _2 nav _3";
   align-items: center;
@@ -49,7 +49,7 @@ header {
 @media screen and (max-width: 900px) {
   header {
     grid-template-rows: 65px 1fr;
-    grid-template-columns: minmax(0, 50px) 232px 1fr minmax(0, 50px);
+    grid-template-columns: minmax(0px, 50px) 232px 1fr minmax(0px, 50px);
     grid-template-areas:
     "_1 image _2 _3"
     "_1 nav nav _3";
@@ -79,7 +79,7 @@ header nav ul {
 }
 
 header .nav-item {
-  font-size: 12pt;
+  font-size: 11pt;
   font-weight: bold;
 }
 
@@ -122,7 +122,7 @@ main {
 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: minmax(0, 50px) 400px 1fr minmax(0, 50px);
+  grid-template-columns: minmax(10px, 50px) 400px 1fr minmax(10px, 50px);
   grid-template-areas:
       "_1 hdr img _2"
       "_1 shdr img _2"
@@ -132,7 +132,7 @@ main {
 
 @media screen and (max-width: 800px) {
   #hero  {
-    grid-template-columns: minmax(0, 50px) 300px 1fr minmax(0, 50px);
+    grid-template-columns: minmax(10px, 50px) 300px 1fr minmax(10px, 50px);
     grid-template-areas:
     "_1 hdr img _2"
     "_1 shdr img _2"
@@ -208,7 +208,7 @@ footer {
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(0, 50px) 150px 100px 1.2fr 1fr 1fr minmax(0, 50px);
+  grid-template-columns: minmax(10px, 50px) 150px 100px 1.2fr 1fr 1fr minmax(10px, 50px);
   grid-template-areas:
       "_1 image _2 doormat contact social _3";
   align-items: top;
