@@ -21,7 +21,7 @@ export const Footer = () => {
   return (
     <footer>
 
-      <img src={GC.logo} alt={"logo"}/>
+      <img src={GC.lemon} alt={"lemon"}/>
 
       <div id="doormat">
         Friends & Partners

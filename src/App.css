@@ -11,8 +11,8 @@
 
   max-width: 1489px;
 
-  grid-template-rows: 123px 1fr 421px;
-  grid-template-columns: minmax(0, 50px) 1fr minmax(0, 50px);
+  grid-template-rows: 123px 1fr 250px;
+  grid-template-columns: minmax(0, 0px) 1fr minmax(0, 0px);
   grid-template-areas:
       "_1 head _2"
       "_1 main _2"
@@ -22,14 +22,14 @@
 header {
   grid-area: head;
   border-bottom: 1px solid black;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 232px 10px 1fr;
+  grid-template-columns: minmax(0, 50px) 232px 10px 1fr minmax(0, 50px);
   grid-template-areas:
-      "image _2 nav";
+      "_1 image _2 nav _3";
   align-items: center;
 }
 
@@ -85,42 +85,48 @@ main {
 #hero {
   grid-area: hero;
   border-bottom: 1px solid blue;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #edefee;
 }
 
 #specials {
   grid-area: specials;
   border-bottom: 1px solid red;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #testimonials {
   grid-area: testimonials;
   border-bottom: 1px solid green;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #edefee;
 }
 
 #about {
   grid-area: about;
   border-bottom: 1px solid orange;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 footer {
   grid-area: footer;
   border-bottom: 1px solid black;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  background-color: #edefee;
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 232px 50px 1fr 1fr 1fr;
+  grid-template-columns: minmax(0, 50px) 100px 100px 1fr 1fr 1fr minmax(0, 50px);
   grid-template-areas:
-      "image _2 doormat contact social";
+      "_1 image _2 doormat contact social _3";
   align-items: top;
 }
 
@@ -136,7 +142,7 @@ footer {
 
 footer img {
   grid-area: image;
-  width: min(232px, 100%);
+  width: 100%;
 }
 
 #doormat {
