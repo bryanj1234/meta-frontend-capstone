@@ -23,6 +23,8 @@
 header {
   grid-area: head;
   border-bottom: 1px solid black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   display: grid;
   grid-template-rows: 1fr;
@@ -34,9 +36,7 @@ header {
 
 header img {
   grid-area: image;
-
   width:100%
-
 }
 
 header nav {
@@ -72,26 +72,36 @@ main {
 #hero {
   grid-area: hero;
   border-bottom: 1px solid blue;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 #specials {
   grid-area: specials;
   border-bottom: 1px solid red;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 #testimonials {
   grid-area: testimonials;
   border-bottom: 1px solid green;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 #about {
   grid-area: about;
   border-bottom: 1px solid orange;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 footer {
   grid-area: footer;
   border-bottom: 1px solid black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   display: grid;
   grid-template-rows: 1fr;
@@ -103,7 +113,6 @@ footer {
 
 footer img {
   grid-area: image;
-
   width: 100%;
 }
 
