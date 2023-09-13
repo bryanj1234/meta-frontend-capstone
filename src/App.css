@@ -50,10 +50,10 @@ header {
 @media screen and (max-width: 900px) {
   header {
     grid-template-rows: 65px 1fr;
-    grid-template-columns: minmax(0px, 50px) 232px 1fr minmax(0px, 50px);
+    grid-template-columns: minmax(10px, 10px) 232px 1fr minmax(0px, 50px);
     grid-template-areas:
     "_1 image _2 _3"
-    "_1 nav nav _3";
+    "_1 nav nav nav";
   }
 }
 
