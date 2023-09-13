@@ -14,6 +14,7 @@ font-family: 'Markazi Text', serif; */
 
   font-family: 'Karla', sans-serif;
   font-size: 16pt;
+  color:#000000;
 
   max-width: 1489px;
 
@@ -103,7 +104,7 @@ main {
   display: grid;
 
   /* grid-template-rows: 383px 869px 590px 515px; */
-  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-rows: 383px 100px 100px 100px;
   grid-template-columns: 1fr;
   grid-template-areas:
       "hero"
@@ -114,39 +115,61 @@ main {
 
 #hero {
   grid-area: hero;
-  border-bottom: 1px solid blue;
   padding-top: 20px;
   padding-bottom: 20px;
 
   background-color: #495e57;
+}
+
+#hero h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+  color:#f4ce14;
+}
+
+#hero h2 {
+  font-size: 24pt;
+  color:#ffffff;
+}
+
+#hero p {
+  font-size: 16pt;
+  color:#ffffff;
 }
 
 #specials {
   grid-area: specials;
-  border-bottom: 1px solid red;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
+#specials h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+}
+
 #testimonials {
   grid-area: testimonials;
-  border-bottom: 1px solid green;
   padding-top: 20px;
   padding-bottom: 20px;
 
   background-color: #495e57;
 }
 
+#testimonials h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+  color:#ffffff;
+}
+
 #about {
   grid-area: about;
-  border-bottom: 1px solid orange;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 footer {
   grid-area: footer;
-  border-bottom: 1px solid black;
   padding-top: 20px;
   padding-bottom: 20px;
 

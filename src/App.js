@@ -9,10 +9,23 @@ function App() {
       <Header></Header>
 
       <Main>
-        <Section id="hero">HERO</Section>
-        <Section id="specials">SPECIALS</Section>
-        <Section id="testimonials">TESTIMONIALS</Section>
-        <Section id="about">ABOUT</Section>
+        <Section id="hero">
+          <h1>Little Lemon</h1>
+          <h2>Detroit</h2>
+          <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+        </Section>
+
+        <Section id="specials">
+          <h1>This week's specials!</h1>
+        </Section>
+
+        <Section id="testimonials">
+          <h1>Testimonials</h1>
+        </Section>
+
+        <Section id="about">
+          <h1>About Us</h1>
+        </Section>
       </Main>
 
       <Footer></Footer>
