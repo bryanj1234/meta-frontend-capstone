@@ -5,10 +5,15 @@
 }
 
 #root {
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
 
+  /* max-width: 1489px; */
+  max-width: 1489px;
+
   grid-template-rows: 123px 1fr 421px;
-  grid-template-columns: 1489px;
+  grid-template-columns: 100%;
   grid-template-areas:
       "head"
       "main"
@@ -27,7 +32,7 @@ main {
 
   /* grid-template-rows: 383px 869px 590px 515px; */
   grid-template-rows: 100px 100px 100px 100px;
-  grid-template-columns: 1489px;
+  grid-template-columns: 100%;
   grid-template-areas:
       "hero"
       "specials"
