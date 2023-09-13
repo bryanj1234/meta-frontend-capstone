@@ -1,3 +1,6 @@
+/* font-family: 'Karla', sans-serif;
+font-family: 'Markazi Text', serif; */
+
 *{
   margin:0;
   padding:0;
@@ -9,9 +12,12 @@
   margin-right: auto;
   display: grid;
 
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+
   max-width: 1489px;
 
-  grid-template-rows: 123px 1fr 250px;
+  grid-template-rows: 123px 1fr 300px;
   grid-template-columns: minmax(0, 0px) 1fr minmax(0, 0px);
   grid-template-areas:
       "_1 head _2"
@@ -65,6 +71,11 @@ header nav ul {
   list-style-type: none;
   padding-left:1rem;
   padding-right:1rem;
+}
+
+header .nav-item {
+  font-size: 12pt;
+  font-weight: bold;
 }
 
 main {
@@ -124,7 +135,7 @@ footer {
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(0, 50px) 150px 100px 1fr 1fr 1fr minmax(0, 50px);
+  grid-template-columns: minmax(0, 50px) 150px 100px 1.2fr 1fr 1fr minmax(0, 50px);
   grid-template-areas:
       "_1 image _2 doormat contact social _3";
   align-items: top;
@@ -132,17 +143,18 @@ footer {
 
 @media screen and (max-width: 900px) {
   footer {
-    grid-template-rows: 80px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 130px 1fr;
+    grid-template-columns: 1.2fr 1fr 1fr;
     grid-template-areas:
     "image image image"
     "doormat contact social";
+    justify-items: center;
   }
 }
 
 footer img {
   grid-area: image;
-  width: 100%;
+  width: min(100%, 100px);
   border-radius: 5px;
 }
 
@@ -156,4 +168,8 @@ footer img {
 
 #social {
   grid-area: social;
+}
+
+footer .nav-item {
+  font-size: 12pt;
 }
