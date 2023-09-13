@@ -184,5 +184,32 @@ SEE: React application
 
 SEE: https://react.dev/learn/passing-data-deeply-with-context
 
-CSS GRID CHEAT SHEET:
+CSS GRID AND FLEXBOX CHEAT SHEET:
+    https://www.coursera.org/learn/html-and-css-in-depth/supplement/A76Uo/grids-and-flexbox-cheat-sheet
+
+CSS GRID EXAMPLE:
     https://www.coursera.org/learn/html-and-css-in-depth/ungradedLab/PP8OK/create-a-grid-layout
+
+CSS GRID RECAP:
+    https://www.coursera.org/learn/meta-front-end-developer-capstone/supplement/7OkGV/recap-css-grids
+
+
+    EXAMPLES:
+
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 2fr 1fr;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: 2fr 1fr;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-auto-rows: minmax(150px, auto);
+        }
