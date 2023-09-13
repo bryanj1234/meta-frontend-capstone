@@ -185,9 +185,13 @@ main {
   height:3rem;
   background-color: #f4ce14;
   border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
 
   font-size: 18pt;
   font-weight: bold;
+  color:#333333;
 }
 
 #specials {
