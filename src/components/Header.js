@@ -4,7 +4,7 @@ const Navbar = (props) => {
 
   const links = props.links;
   const link_items = links.map(
-    (link) => <li key={link.key}><a href={link.url}>{link.title}</a></li>
+    (link) => <li class="nav-item" key={link.key}><a href={link.url}>{link.title}</a></li>
   );
 
   return (

@@ -24,7 +24,36 @@ header {
   grid-area: head;
   border-bottom: 1px solid black;
 
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 125px 232px 1fr;
+  grid-template-areas:
+      "_ image nav";
+  align-items: center;
+}
+
+header img {
+  grid-area: image;
+
+  width:100%
+
+}
+
+header nav {
+  grid-area: nav;
+}
+
+header nav ul {
+  grid-area: nav;
+
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  justify-content: center;
+  list-style-type: none;
 }
 
 main {
@@ -38,26 +67,6 @@ main {
       "specials"
       "testimonials"
       "about";
-}
-
-footer {
-  grid-area: footer;
-  border-bottom: 1px solid black;
-
-  display: flex;
-}
-
-header img {
-  display: block;
-  margin-left: 125px;
-  width: 232px;
-}
-
-footer img {
-  display: block;
-  margin-left: 125px;
-  width: 232px;
-  height: 232px;
 }
 
 #hero {
@@ -78,4 +87,34 @@ footer img {
 #about {
   grid-area: about;
   border-bottom: 1px solid orange;
+}
+
+footer {
+  grid-area: footer;
+  border-bottom: 1px solid black;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 125px 232px 1fr 1fr 1fr;
+  grid-template-areas:
+      "_ image doormat contact social";
+  align-items: center;
+}
+
+footer img {
+  grid-area: image;
+
+  width: 100%;
+}
+
+#doormat {
+  grid-area: doormat;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#social {
+  grid-area: social;
 }
