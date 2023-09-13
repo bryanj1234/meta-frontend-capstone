@@ -1,9 +1,13 @@
 import './App.css';
+
+import {useGC} from './GlobalContext';
+
 import {Header} from './components/Header';
 import {Main, Section} from './components/Main';
 import {Footer} from './components/Footer';
 
 function App() {
+  const GC = useGC();
   return (
     <>
       <Header></Header>
@@ -13,6 +17,7 @@ function App() {
           <h1>Little Lemon</h1>
           <h2>Detroit</h2>
           <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+          <img src={GC.header_image} alt={"header_image"}/>
         </Section>
 
         <Section id="specials">

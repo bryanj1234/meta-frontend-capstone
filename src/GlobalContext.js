@@ -1,10 +1,12 @@
 import logo from './assets/logo.svg';
 import lemon from './assets/lemon.png';
+import header_image from './assets/lemon_dessert.jpg';
 import {createContext, useContext} from 'react';
 
 const tmpContext = {
   'logo':logo,
   'lemon':lemon,
+  'header_image':header_image,
   'app_name':'Little Lemon',
   'nav_links': [
     {'key':1, 'url':'#Home', 'title':'Home'},

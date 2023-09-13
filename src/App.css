@@ -49,10 +49,10 @@ header {
 @media screen and (max-width: 900px) {
   header {
     grid-template-rows: 65px 1fr;
-    grid-template-columns: 232px 1fr;
+    grid-template-columns: minmax(0, 50px) 232px 1fr minmax(0, 50px);
     grid-template-areas:
-    "image _1"
-    "nav nav";
+    "_1 image _2 _3"
+    "_1 nav nav _3";
   }
 }
 
@@ -119,22 +119,53 @@ main {
   padding-bottom: 20px;
 
   background-color: #495e57;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: minmax(0, 50px) 400px 1fr minmax(0, 50px);
+  grid-template-areas:
+      "_1 hdr img _2"
+      "_1 shdr img _2"
+      "_1 par img _2"
+      "_1 btn-reserve img _2";
+}
+
+@media screen and (max-width: 800px) {
+  #hero  {
+    grid-template-columns: minmax(0, 50px) 300px 1fr minmax(0, 50px);
+    grid-template-areas:
+    "_1 hdr img _2"
+    "_1 shdr img _2"
+    "_1 par par _2"
+    "_1 btn-reserve btn-reserve _2";
+  }
 }
 
 #hero h1 {
+  grid-area: hdr;
   font-family: 'Markazi Text', serif;
   font-size: 40pt;
   color:#f4ce14;
 }
 
 #hero h2 {
+  grid-area: shdr;
   font-size: 24pt;
   color:#ffffff;
 }
 
 #hero p {
+  grid-area: par;
   font-size: 16pt;
   color:#ffffff;
+}
+
+#hero img {
+  grid-area: img;
+  height: 100%;
+  border-radius: 0px;
+  padding: 10px;
+  justify-self: center;
 }
 
 #specials {
