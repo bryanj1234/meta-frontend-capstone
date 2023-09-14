@@ -11,7 +11,8 @@ import {Main, Section, About} from './components/Main';
 import {Footer} from './components/Footer';
 import {Specials} from './components/Specials';
 import {Testimonials} from './components/Testimonials';
-import {Reserve, Order} from './components/Reserve';
+import {Reserve} from './components/Reserve';
+import {Order} from './components/Order';
 
 function App() {
   const GC = useGC();
