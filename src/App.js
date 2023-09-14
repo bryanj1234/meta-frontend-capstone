@@ -83,7 +83,7 @@ function App() {
 
           <Route path="/Order_online" element={
             <>
-              {theorders}}
+              {theorders}
             </>
           }></Route>
 
