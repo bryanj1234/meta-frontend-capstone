@@ -580,6 +580,10 @@ footer a:hover {
 
 #reserve {
 
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
   height: 500px;
   width: 500px;
 
@@ -594,6 +598,10 @@ footer a:hover {
 }
 
 #order {
+
+  display: flex;
+  align-items:center;
+  justify-content:center;
 
   height: 500px;
   width: 500px;
