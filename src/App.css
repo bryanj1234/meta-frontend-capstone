@@ -106,7 +106,7 @@ main {
   display: grid;
 
   /* grid-template-rows: 383px 869px 590px 515px; */
-  grid-template-rows: 383px 100px 100px 100px;
+  grid-template-rows: 383px 600px 100px 100px;
   grid-template-columns: 1fr;
   grid-template-areas:
       "hero"
@@ -215,7 +215,7 @@ main {
   grid-template-columns: 50px 400px 100px 1fr 50px;
   grid-template-areas:
       "_1 hdr _2 btn-order _3"
-      "_1 gallery gallery gallery gallery";
+      "gallery gallery gallery gallery gallery";
 
   --js: left;
 }
@@ -225,7 +225,7 @@ main {
     grid-template-columns: 10px 300px 1fr 10px;
     grid-template-areas:
       "_1 hdr btn-order _2"
-      "_1 gallery gallery gallery";
+      "gallery gallery gallery gallery";
 
       --js: right;
   }
@@ -265,6 +265,22 @@ main {
 
 #btn-order:hover {
   color:#ffffff;
+}
+
+#specials-gallery {
+  grid-area: gallery;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  /* width:500px; */
+  display: flex;
+  overflow-x: auto;
+}
+
+.scard {
+  margin-right: 20px;
+  min-width:300px;
 }
 
 #testimonials {

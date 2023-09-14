@@ -5,6 +5,7 @@ import {useGC} from './GlobalContext';
 import {Header} from './components/Header';
 import {Main, Section} from './components/Main';
 import {Footer} from './components/Footer';
+import {Specials} from './components/Specials';
 
 function App() {
   const GC = useGC();
@@ -24,6 +25,7 @@ function App() {
         <Section id="specials">
           <h1>Specials</h1>
           <span id="btn-order">Order online</span>
+          <Specials specials={GC.specials}></Specials>
         </Section>
 
         <Section id="testimonials">

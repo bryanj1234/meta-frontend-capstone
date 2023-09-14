@@ -16,6 +16,16 @@ const tmpContext = {
     {'key':5, 'url':'#Order_online', 'title':'Order online'},
     {'key':6, 'url':'#Login', 'title':'Login'}
   ],
+
+  'specials':[
+    {'key':1, 'dish':'Special #1'},
+    {'key':2, 'dish':'Special #2'},
+    {'key':3, 'dish':'Special #3'},
+    {'key':4, 'dish':'Special #4'},
+    {'key':5, 'dish':'Special #5'},
+    {'key':6, 'dish':'Special #6'}
+  ],
+
   'doormat': [
     {'key':1, 'url':'#TBD', 'title':'door #1'},
     {'key':2, 'url':'#TBD', 'title':'door #2'},
