@@ -577,3 +577,33 @@ footer a:hover {
 .fl-header {
   color: #ffffff;
 }
+
+#reserve {
+
+  height: 500px;
+  width: 500px;
+
+  margin:3rem;
+  margin-left:auto;
+  margin-right:auto;
+
+  background-color: #495e57;
+
+  color:#f4ce14;
+  text-align: center;
+}
+
+#order {
+
+  height: 500px;
+  width: 500px;
+
+  margin:3rem;
+  margin-left:auto;
+  margin-right:auto;
+
+  background-color: #f4ce14;
+
+  color:#495e57;
+  text-align: center;
+}

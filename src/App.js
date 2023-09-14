@@ -11,6 +11,7 @@ import {Main, Section, About} from './components/Main';
 import {Footer} from './components/Footer';
 import {Specials} from './components/Specials';
 import {Testimonials} from './components/Testimonials';
+import {Reserve, Order} from './components/Reserve';
 
 function App() {
   const GC = useGC();
@@ -20,12 +21,12 @@ function App() {
         <h2>Detroit</h2>
         <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
         <img src={GC.header_image} alt={"header_image"}/>
-        <span id="btn-reserve"><Link to="Reservations">Reserve a table</Link></span>
+        <span id="btn-reserve"><Link to="/Reservations">Reserve a table</Link></span>
       </Section>
 
   const thespecials = <Section id="specials">
     <h1>Specials</h1>
-    <span id="btn-order"><Link to="Order_online">Order online</Link></span>
+    <span id="btn-order"><Link to="/Order_online">Order online</Link></span>
     <Specials specials={GC.specials}></Specials>
   </Section>
 
@@ -35,6 +36,10 @@ function App() {
   </Section>
 
   const theabout = <About></About>
+
+  const thereservations = <Reserve></Reserve>
+
+  const theorders = <Order></Order>
 
   return (
     <>
@@ -72,14 +77,14 @@ function App() {
 
           <Route path="/Reservations" element={
             <>
-            FIXME: RESERVATIONS
-          </>
+             {thereservations}
+            </>
           }></Route>
 
           <Route path="/Order_online" element={
             <>
-            FIXME: ORDER ONLINE
-          </>
+              {theorders}}
+            </>
           }></Route>
 
           <Route path="/Login" element={
