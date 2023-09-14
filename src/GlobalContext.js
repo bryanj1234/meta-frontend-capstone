@@ -35,7 +35,7 @@ const tmpContext = {
       'dish':'Brushetta',
       'price':"$7.99",
       'img':special_bruschetta,
-      'desc':'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. Toppings of tomato, veggies, beans, cured pork, or cheese are examples of variations. In Italy, a brustolina grill is frequently used to create bruschetta.'},
+      'desc':'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.'},
 
     {'key':3,
       'dish':'Lemon Dessert',
