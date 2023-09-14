@@ -641,7 +641,7 @@ footer a:hover {
   grid-area: area2;
   display: grid;
   max-width: 200px;
-  gap: 20px;
+  gap: 40px;
 
   color:#333333;
   font-size: 16pt;
@@ -691,5 +691,16 @@ footer a:hover {
   font-size: 12pt;
   font-weight: bold;
   color:#495e57;
+}
+
+sup {
+  color: red;
+  top: -2px;
+  font-size: 95%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  margin-right: 0.5rem;
+  visibility: v;
 }
 
