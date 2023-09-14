@@ -1,7 +1,14 @@
+import {createContext, useContext} from 'react';
+
 import logo from './assets/logo.svg';
 import lemon from './assets/lemon.png';
 import header_image from './assets/lemon_dessert.jpg';
-import {createContext, useContext} from 'react';
+
+import special_greek_salad from './assets/special_greek_salad.jpg';
+import special_bruschetta from './assets/special_bruschetta.jpg';
+import special_lemon_dessert from './assets/special_lemon_dessert.jpg';
+import special_placeholder from './assets/special_placeholder.jpg';
+
 
 const tmpContext = {
   'logo':logo,
@@ -18,12 +25,37 @@ const tmpContext = {
   ],
 
   'specials':[
-    {'key':1, 'dish':'Special #1'},
-    {'key':2, 'dish':'Special #2'},
-    {'key':3, 'dish':'Special #3'},
-    {'key':4, 'dish':'Special #4'},
-    {'key':5, 'dish':'Special #5'},
-    {'key':6, 'dish':'Special #6'}
+    {'key':1,
+      'dish':'Greek Salad',
+      'img':special_greek_salad,
+      'desc':'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.'},
+
+    {'key':2,
+      'dish':'Brushetta',
+      'img':special_bruschetta,
+      'desc':'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. Toppings of tomato, veggies, beans, cured pork, or cheese are examples of variations. In Italy, a brustolina grill is frequently used to create bruschetta.'},
+
+    {'key':3,
+      'dish':'Lemon Dessert',
+      'img':special_lemon_dessert,
+      'desc':'Just try it!'},
+
+    {'key':4,
+      'dish':'Grilled Fish',
+      'img':special_placeholder,
+      'desc':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
+
+    {'key':5,
+      'dish':'Pasta',
+        'img':special_placeholder,
+        'desc':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
+
+    {'key':6,
+      'dish':'Special #5',
+      'img':special_placeholder,
+      'desc':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
+
+
   ],
 
   'doormat': [

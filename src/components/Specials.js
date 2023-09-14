@@ -1,7 +1,11 @@
 const SpecialCard = (special) => {
 
   return (
-    <div className="scard" skey={special.specialKey}>{special.dish}</div>
+    <div className="scard" skey={special.specialKey}>
+      <img className="simg" src={special.img}></img>
+      <div className="sdish">{special.dish}</div>
+      <div className="sdesc">{special.desc}</div>
+    </div>
   )
 }
 
@@ -13,7 +17,9 @@ export const Specials = (props) => {
     (special) => <SpecialCard
                     key={special.key}
                     skey={special.key}
-                    dish={special.dish}>
+                    dish={special.dish}
+                    img={special.img}
+                    desc={special.desc}>
                   </SpecialCard>
   );
 
