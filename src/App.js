@@ -22,7 +22,8 @@ function App() {
         </Section>
 
         <Section id="specials">
-          <h1>This week's specials!</h1>
+          <h1>Specials</h1>
+          <span id="btn-order">Order online</span>
         </Section>
 
         <Section id="testimonials">
