@@ -419,7 +419,7 @@ main {
 
 @media screen and (max-width: 900px) {
   #about  {
-    grid-template-columns: 10px 1fr 50px 50px 50px 10px;
+    grid-template-columns: 10px 300px 50px 50px 50px 10px;
   }
 }
 
