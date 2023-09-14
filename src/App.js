@@ -11,8 +11,8 @@ import {Main, Section, About} from './components/Main';
 import {Footer} from './components/Footer';
 import {Specials} from './components/Specials';
 import {Testimonials} from './components/Testimonials';
-import {Reserve} from './components/Reserve';
 import {BookingPage} from './components/BookingPage';
+import {Order} from './components/Order';
 
 function App() {
   const GC = useGC();
@@ -38,9 +38,9 @@ function App() {
 
   const theabout = <About></About>
 
-  const thereservations = <Reserve></Reserve>
+  const thereservations = <BookingPage></BookingPage>
 
-  const theorders = <BookingPage></BookingPage>
+  const theorders = <Order></Order>
 
   return (
     <>
