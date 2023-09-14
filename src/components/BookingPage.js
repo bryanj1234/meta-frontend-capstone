@@ -5,6 +5,7 @@ export const BookingForm = () => {
   const [visitDate, setVisitDate] = useState("");
   const [visitTime, setVisitTime] = useState("");
   const [visitNumber, setVisitNumber] = useState(1);
+  const [occasion, setOccasion] = useState("No special occasion");
 
   function visitDateChange(e) {
     setVisitDate(e.target.value);
@@ -18,12 +19,12 @@ export const BookingForm = () => {
     setVisitNumber(e.target.value);
   }
 
+  function occasionChange(e) {
+    setOccasion(e.target.value);
+  }
+
+
   function getIsFormValid() {
-
-    console.log(visitDate != "");
-    console.log(visitTime != "");
-    console.log(visitNumber != "");
-
     return visitDate;
   }
 
@@ -38,23 +39,32 @@ export const BookingForm = () => {
     getIsFormValid();
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Submitted!");
+
+    console.log(visitDate);
+    console.log(visitTime);
+    console.log(visitNumber);
+    console.log(occasion);
+  };
+
   return (
     <>
 
-      <form id="booking-form">
+      <form id="booking-form" onSubmit={handleSubmit}>
 
         <span>
-        <sup>*</sup>
         <label htmlFor="res-date">Choose date</label>
-        <input className="Field" type="date" id="res-date"
+        <input className={visitDate != "" ? "Field" : "InvalidField"} type="date" id="res-date"
           value={visitDate} onChange={visitDateChange}
         />
+        <sup className={visitDate != "" ? "" : "fixit"}>*</sup>
         </span>
 
         <span>
-        <sup>*</sup>
         <label htmlFor="res-time">Choose time</label>
-        <select className="Field" id="res-time"
+        <select className={visitTime != "" ? "Field" : "InvalidField"} id="res-time"
           value={visitTime} onChange={visitTimeChange}
         >
             <option></option>
@@ -65,10 +75,10 @@ export const BookingForm = () => {
             <option>21:00</option>
             <option>22:00</option>
         </select>
+        <sup className={visitTime != "" ? "" : "fixit"}>*</sup>
         </span>
 
         <span>
-        <sup>*</sup>
         <label htmlFor="guests">Number of guests</label>
         <input className="Field" type="number" placeholder="1" min="1" max="10" id="guests"
           value={visitNumber} onChange={visitNumberChange}
@@ -76,9 +86,9 @@ export const BookingForm = () => {
         </span>
 
         <span>
-        <sup>*</sup>
         <label htmlFor="occasion">Occasion</label>
-        <select className="Field" id="occasion">
+        <select className="Field" id="occasion"
+          value={occasion} onChange={occasionChange}>
             <option>No special occasion</option>
             <option>Birthday</option>
             <option>Anniversary</option>

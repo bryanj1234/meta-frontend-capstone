@@ -693,14 +693,32 @@ footer a:hover {
   color:#495e57;
 }
 
+.InvalidField {
+  border-radius: 0px;
+  border: 1px solid red;
+  background-color:#ffffff;
+  height: 3rem;
+  padding: 0 8px;
+  width:85%;
+  font-size: 12pt;
+  font-weight: bold;
+  color:#495e57;
+}
+
 sup {
+  content: '*';
+
   color: red;
   top: -2px;
   font-size: 95%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-  margin-right: 0.5rem;
-  visibility: v;
+  margin-left: 0.5rem;
+  visibility: hidden;
+}
+
+sup.fixit {
+  visibility: visible;
 }
 
