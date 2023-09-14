@@ -106,7 +106,7 @@ main {
 
   display: grid;
 
-  grid-template-rows: 383px 700px 530px 100px;
+  grid-template-rows: 383px 640px 480px 1fr;
   grid-template-columns: 1fr;
   grid-template-areas:
       "hero"
@@ -276,6 +276,8 @@ main {
 
   display: flex;
   overflow-x: auto;
+
+  height:575px
 }
 
 .scard {
@@ -355,7 +357,7 @@ main {
 #testimonials-gallery {
   grid-area: gallery;
 
-  height:380px;
+  height:405px;
 
   display: flex;
   flex-direction: row;
@@ -365,7 +367,7 @@ main {
 .tcard {
   margin-right: 20px;
   min-width:300px;
-  height: 90%;
+  height: 95%;
 
   background-color: #ffffff;
   border-radius: var(--corner-rad);
@@ -397,12 +399,49 @@ main {
   grid-area: about;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50px 1fr;
+  grid-template-areas:
+      "_1 hdr"
+      "_1 ab-text";
 }
 
-#about h1 {
+@media screen and (max-width: 900px) {
+  #about  {
+    grid-template-columns: 10px 1fr;
+  }
+}
+
+#at-wrap {
+  grid-area: hdr;
   font-family: 'Markazi Text', serif;
   font-size: 40pt;
 }
+
+#ab {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+}
+
+#ll {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+}
+
+#det {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+}
+
+#ab-text {
+  grid-area: ab-text;
+
+  font-size: 14pt;
+  color:#333333;
+}
+
 
 footer {
   grid-area: footer;
