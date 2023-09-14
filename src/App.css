@@ -197,14 +197,17 @@ main {
   border-style: solid;
   border-color: #fdbabb;
 
-  font-size: 18pt;
-  font-weight: bold;
-  color:#333333;
-
   filter: drop-shadow(10px 15px 10px #444444);
 }
 
-#btn-reserve:hover {
+#btn-reserve a {
+  font-size: 18pt;
+  font-weight: bold;
+
+  color:#333333;
+}
+
+#btn-reserve a:hover {
   color:#ffffff;
 }
 
@@ -272,7 +275,14 @@ main {
   filter: drop-shadow(10px 15px 10px #444444);
 }
 
-#btn-order:hover {
+#btn-order a {
+  font-size: 18pt;
+  font-weight: bold;
+
+  color:#333333;
+}
+
+#btn-order a:hover {
   color:#ffffff;
 }
 
