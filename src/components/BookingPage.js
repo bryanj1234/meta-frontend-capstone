@@ -1,4 +1,42 @@
+import { useState, useEffect } from "react";
+
 export const BookingForm = () => {
+
+  const [visitDate, setVisitDate] = useState("");
+  const [visitTime, setVisitTime] = useState("");
+  const [visitNumber, setVisitNumber] = useState(1);
+
+  function visitDateChange(e) {
+    setVisitDate(e.target.value);
+  }
+
+  function visitTimeChange(e) {
+    setVisitTime(e.target.value);
+  }
+
+  function visitNumberChange(e) {
+    setVisitNumber(e.target.value);
+  }
+
+  function getIsFormValid() {
+
+    console.log(visitDate != "");
+    console.log(visitTime != "");
+    console.log(visitNumber != "");
+
+    return visitDate;
+  }
+
+  const clearForm = () => {
+    setVisitDate("");
+    setVisitTime("");
+    //setVisitNumber("");
+  };
+
+  useEffect(() => {
+    clearForm();
+    getIsFormValid();
+  }, []);
 
   return (
     <>
@@ -6,10 +44,15 @@ export const BookingForm = () => {
       <form id="booking-form">
 
         <label htmlFor="res-date">Choose date</label>
-        <input type="date" id="res-date" />
+        <input className="Field" type="date" id="res-date"
+          value={visitDate} onChange={visitDateChange}
+        />
 
         <label htmlFor="res-time">Choose time</label>
-        <select id="res-time ">
+        <select className="Field" id="res-time"
+          value={visitTime} onChange={visitTimeChange}
+        >
+            <option></option>
             <option>17:00</option>
             <option>18:00</option>
             <option>19:00</option>
@@ -19,17 +62,20 @@ export const BookingForm = () => {
         </select>
 
         <label htmlFor="guests">Number of guests</label>
-
-        <input type="number" placeholder="1" min="1" max="10" id="guests" />
+        <input className="Field" type="number" placeholder="1" min="1" max="10" id="guests"
+          value={visitNumber} onChange={visitNumberChange}
+        />
 
         <label htmlFor="occasion">Occasion</label>
-        <select id="occasion">
+        <select className="Field" id="occasion">
             <option>No special occasion</option>
             <option>Birthday</option>
             <option>Anniversary</option>
         </select>
 
-        <input id="submit" type="submit" value="Reserve Now" />
+        <input className="Field" id="submit" type="submit" value="Reserve Now"
+          disabled={!getIsFormValid()}
+        />
 
       </form>
     </>
