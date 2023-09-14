@@ -41,7 +41,7 @@ header {
 
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: minmax(10px, 50px) 232px 10px 1fr minmax(10px, 50px);
+  grid-template-columns: 50px 232px 10px 1fr 50px;
   grid-template-areas:
       "_1 image _2 nav _3";
   align-items: center;
@@ -50,7 +50,7 @@ header {
 @media screen and (max-width: 900px) {
   header {
     grid-template-rows: 65px 1fr;
-    grid-template-columns: minmax(10px, 10px) 232px 1fr minmax(0px, 50px);
+    grid-template-columns: 10px 232px 1fr 10px;
     grid-template-areas:
     "_1 image _2 _3"
     "_1 nav nav nav";
@@ -123,23 +123,27 @@ main {
   background-color: #495e57;
 
   display: grid;
-  grid-template-rows: 55px 55px 1fr 1fr;
-  grid-template-columns: minmax(10px, 50px) 400px minmax(0px, 100px) 1fr minmax(10px, 50px);
+  grid-template-rows: 55px 60px 140px 1fr;
+  grid-template-columns: 50px 300px 200px 1fr 50px;
   grid-template-areas:
       "_1 hdr _3 img _2"
       "_1 shdr _3 img _2"
       "_1 par _3 img _2"
-      "_1 btn-reserve _3 img _2";
+      "_1 btn-reserve btn-reserve img _2";
+
+  --js:left;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #hero  {
-    grid-template-columns: minmax(10px, 50px) 300px 1fr minmax(10px, 50px);
+    grid-template-columns: 10px 300px 20px 1fr 10px;
     grid-template-areas:
-    "_1 hdr img _2"
-    "_1 shdr img _2"
-    "_1 par img _2"
-    "_1 btn-reserve _999 _2";
+    "_1 hdr _99 img _2"
+    "_1 shdr _99 img _2"
+    "_1 par _99 img _2"
+    "_1 btn-reserve _99 _999 _2";
+
+    --js:right;
   }
 }
 
@@ -167,8 +171,7 @@ main {
   grid-area: img;
   height: 100%;
   border-radius: var(--corner-rad);
-  padding: 10px;
-  justify-self: left;
+  justify-self: var(--js);
 
   filter: drop-shadow(10px 15px 10px #444444);
 }
@@ -176,14 +179,14 @@ main {
 #btn-reserve {
   grid-area: btn-reserve;
 
+  justify-self: left;
+
   display: flex;
   justify-content: center;
   text-align:center;
   flex-direction: column;
 
   width: 15rem;
-  margin-left:1rem;
-  margin-right:1rem;
   height:3rem;
   background-color: #f4ce14;
   border-radius: 5px;
@@ -194,6 +197,8 @@ main {
   font-size: 18pt;
   font-weight: bold;
   color:#333333;
+
+  filter: drop-shadow(10px 15px 10px #444444);
 }
 
 #btn-reserve:hover {
@@ -207,10 +212,23 @@ main {
 
   display: grid;
   grid-template-rows: 55px 1fr;
-  grid-template-columns: minmax(10px, 50px) 400px 1fr;
+  grid-template-columns: 50px 400px 100px 1fr 50px;
   grid-template-areas:
-      "_1 hdr btn-order"
-      "_1 gallery gallery"
+      "_1 hdr _2 btn-order _3"
+      "_1 gallery gallery gallery gallery";
+
+  --js: left;
+}
+
+@media screen and (max-width: 900px) {
+  #specials  {
+    grid-template-columns: 10px 300px 1fr 10px;
+    grid-template-areas:
+      "_1 hdr btn-order _2"
+      "_1 gallery gallery gallery";
+
+      --js: right;
+  }
 }
 
 #specials h1 {
@@ -223,14 +241,14 @@ main {
 #btn-order {
   grid-area: btn-order;
 
+  justify-self: var(--js);
+
   display: flex;
   justify-content: center;
   text-align:center;
   flex-direction: column;
 
   width: 15rem;
-  margin-left:1rem;
-  margin-right:1rem;
   height:3rem;
   background-color: #f4ce14;
   border-radius: 5px;
@@ -241,6 +259,8 @@ main {
   font-size: 18pt;
   font-weight: bold;
   color:#333333;
+
+  filter: drop-shadow(10px 15px 10px #444444);
 }
 
 #btn-order:hover {
