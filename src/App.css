@@ -672,14 +672,24 @@ footer a:hover {
   color:#ffffff;
 }
 
-input,
-select {
+#submit:disabled,
+#submit[disabled] {
+  border: 1px solid #aaaaaa;
+  background-color: #eeeeee;
+  color: #aaaaaa;
+  cursor: not-allowed;
+  filter: drop-shadow(10px 15px 10px #aaaaaa);
+}
+
+.Field {
   border-radius: 0px;
   border: 1px solid #f4ce14;
   background-color:#ffffff;
   height: 3rem;
   padding: 0 8px;
-  width:80%;
+  width:85%;
   font-size: 12pt;
+  font-weight: bold;
+  color:#495e57;
 }
 
