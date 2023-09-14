@@ -587,24 +587,7 @@ footer a:hover {
   color: #ffffff;
 }
 
-#reserve {
 
-  display: flex;
-  align-items:center;
-  justify-content:center;
-
-  height: 500px;
-  width: 500px;
-
-  margin:3rem;
-  margin-left:auto;
-  margin-right:auto;
-
-  background-color: #495e57;
-
-  color:#f4ce14;
-  text-align: center;
-}
 
 #order {
 
@@ -624,3 +607,79 @@ footer a:hover {
   color:#495e57;
   text-align: center;
 }
+
+#reserve {
+  width:100%;
+  padding: 3rem;
+
+  display:grid;
+  grid-template-rows: 123px 1fr 50px;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-areas:
+      "_1 area1 _2"
+      "_1 area2 _2"
+      "_1 area3 _2";
+  justify-items: center;
+}
+
+#reserve h1 {
+  grid-area: area1;
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+  color:#f4ce14;
+
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  #reserve h1 {
+    font-size: 32pt;
+  }
+}
+
+#booking-form {
+  grid-area: area2;
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+
+  color:#333333;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+#submit {
+  color:#495e57;
+  background-color:#f4ce14;
+
+  width: 15rem;
+  height:3rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fdbabb;
+  border-radius: 5px;
+
+  font-family: 'Karla', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+
+  margin-top:1rem;
+
+  filter: drop-shadow(10px 15px 10px #444444);
+}
+
+#submit:hover {
+  color:#ffffff;
+}
+
+input,
+select {
+  border-radius: 0px;
+  border: 1px solid #f4ce14;
+  background-color:#ffffff;
+  height: 3rem;
+  padding: 0 8px;
+  width:80%;
+  font-size: 12pt;
+}
+
