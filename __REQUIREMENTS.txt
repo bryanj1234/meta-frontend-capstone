@@ -213,3 +213,7 @@ CSS GRID RECAP:
             grid-template-columns: repeat(3, 100px);
             grid-auto-rows: minmax(150px, auto);
         }
+
+BRYAN FIXME:
+    FIX LAYOUT AND COSMETICS FOR DIFFERENT DEVICES.
+    USE CSS VARIABLES.
