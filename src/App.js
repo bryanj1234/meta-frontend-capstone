@@ -15,6 +15,7 @@ function App() {
       <Header></Header>
 
       <Main>
+
         <Section id="hero">
           <h1>Little Lemon</h1>
           <h2>Detroit</h2>
@@ -48,6 +49,7 @@ function App() {
           <img id="ai2" src={GC.about_image_2}></img>
 
         </Section>
+
       </Main>
 
       <Footer></Footer>
