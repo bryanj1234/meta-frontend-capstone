@@ -107,7 +107,7 @@ main {
   display: grid;
 
   /* grid-template-rows: 383px 869px 590px 515px; */
-  grid-template-rows: 383px 700px 100px 100px;
+  grid-template-rows: 383px 700px 590px 100px;
   grid-template-columns: 1fr;
   grid-template-areas:
       "hero"
@@ -118,14 +118,14 @@ main {
 
 #hero {
   grid-area: hero;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 
   background-color: #495e57;
 
   display: grid;
   grid-template-rows: 55px 60px 140px 1fr;
-  grid-template-columns: 50px 300px 200px 1fr 50px;
+  grid-template-columns: 50px 300px 50px 1fr 0px;
   grid-template-areas:
       "_1 hdr _3 img _2"
       "_1 shdr _3 img _2"
@@ -137,14 +137,14 @@ main {
 
 @media screen and (max-width: 900px) {
   #hero  {
-    grid-template-columns: 10px 300px 20px 1fr 10px;
+    grid-template-columns: 10px 300px 20px 1fr 0px;
     grid-template-areas:
     "_1 hdr _99 img _2"
     "_1 shdr _99 img _2"
     "_1 par _99 img _2"
-    "_1 btn-reserve _99 _999 _2";
+    "_1 btn-reserve _99 img _2";
 
-    --js:right;
+    --js:left;
   }
 }
 
@@ -170,11 +170,13 @@ main {
 
 #hero img {
   grid-area: img;
+  object-fit: cover;
+  width: 100%;
   height: 100%;
-  border-radius: var(--corner-rad);
+  /* border-top-left-radius: var(--corner-rad);
+  border-bottom-left-radius: var(--corner-rad); */
   justify-self: var(--js);
 
-  filter: drop-shadow(10px 15px 10px #444444);
 }
 
 #btn-reserve {
@@ -229,9 +231,9 @@ main {
     grid-template-columns: 10px 300px 1fr 10px;
     grid-template-areas:
       "_1 hdr btn-order _2"
-      "gallery gallery gallery gallery";
+      "_1 gallery gallery gallery";
 
-      --js: right;
+    --js: right;
   }
 }
 
@@ -323,9 +325,7 @@ main {
   margin-left: 2rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
-
 }
-
 
 #testimonials {
   grid-area: testimonials;
@@ -333,13 +333,73 @@ main {
   padding-bottom: 20px;
 
   background-color: #495e57;
+
+  align-items: center;
+
+  display: grid;
+  grid-template-rows: 60px 600px;
+  grid-template-columns: 50px 1fr;
+  grid-template-areas:
+      "_1 hdr"
+      "_1 gallery";
+
+  row-gap: 0px;
+
+  --js: left;
+}
+
+@media screen and (max-width: 900px) {
+  #testimonials  {
+    grid-template-columns: 10px 1fr;
+
+    --js: right;
+  }
 }
 
 #testimonials h1 {
+  grid-area: hdr;
+
   font-family: 'Markazi Text', serif;
   font-size: 40pt;
   color:#ffffff;
 }
+
+#testimonials-gallery {
+  grid-area: gallery;
+
+  display: flex;
+  overflow-x: auto;
+}
+
+.tcard {
+  margin-right: 20px;
+  min-width:300px;
+  height:300px;
+
+  background-color: #ffffff;
+  border-radius: var(--corner-rad);
+
+  margin-bottom: 10px;
+}
+
+.t-title{
+  font-size: 20pt;
+  font-weight: bold;
+  color:#333333;
+  margin-left: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.t-review {
+  font-size: 14pt;
+  color:#333333;
+
+  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+
 
 #about {
   grid-area: about;

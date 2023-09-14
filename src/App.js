@@ -6,6 +6,7 @@ import {Header} from './components/Header';
 import {Main, Section} from './components/Main';
 import {Footer} from './components/Footer';
 import {Specials} from './components/Specials';
+import {Testimonials} from './components/Testimonials';
 
 function App() {
   const GC = useGC();
@@ -30,6 +31,7 @@ function App() {
 
         <Section id="testimonials">
           <h1>Testimonials</h1>
+          <Testimonials testimonials={GC.testimonials}></Testimonials>
         </Section>
 
         <Section id="about">

@@ -2,7 +2,8 @@ import {createContext, useContext} from 'react';
 
 import logo from './assets/logo.svg';
 import lemon from './assets/lemon.png';
-import header_image from './assets/lemon_dessert.jpg';
+// import header_image from './assets/lemon_dessert.jpg';
+import header_image from './assets/restaurant.jpg';
 
 import special_greek_salad from './assets/special_greek_salad.jpg';
 import special_bruschetta from './assets/special_bruschetta.jpg';
@@ -60,7 +61,24 @@ const tmpContext = {
       'price':"$13.99",
       'img':special_placeholder,
       'desc':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
+  ],
 
+  'testimonials':[
+    {'key':1,
+      'title':'Review #1',
+      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
+
+    {'key':2,
+      'title':'Review #2',
+      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
+
+    {'key':3,
+      'title':'Review #3',
+      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
+
+    {'key':4,
+      'title':'Review #4',
+      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
 
   ],
 
