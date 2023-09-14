@@ -8,6 +8,7 @@ font-family: 'Markazi Text', serif; */
 
   --corner-rad: 20px;
 }
+
 #root {
   margin-left: auto;
   margin-right: auto;
@@ -106,7 +107,7 @@ main {
   display: grid;
 
   /* grid-template-rows: 383px 869px 590px 515px; */
-  grid-template-rows: 383px 600px 100px 100px;
+  grid-template-rows: 383px 700px 100px 100px;
   grid-template-columns: 1fr;
   grid-template-areas:
       "hero"
@@ -207,15 +208,18 @@ main {
 
 #specials {
   grid-area: specials;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+
+  align-items: center;
 
   display: grid;
-  grid-template-rows: 55px 1fr;
+  grid-template-rows: 60px 600px;
   grid-template-columns: 50px 400px 100px 1fr 50px;
   grid-template-areas:
       "_1 hdr _2 btn-order _3"
-      "gallery gallery gallery gallery gallery";
+      "_1 gallery gallery gallery gallery";
+
+  row-gap: 0px;
 
   --js: left;
 }
@@ -270,10 +274,6 @@ main {
 #specials-gallery {
   grid-area: gallery;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  /* width:500px; */
   display: flex;
   overflow-x: auto;
 }
@@ -281,7 +281,50 @@ main {
 .scard {
   margin-right: 20px;
   min-width:300px;
+  height:500px;
+
+  background-color: #edefee;
+  border-radius: var(--corner-rad);
+
+  margin-bottom: 10px;
 }
+
+.simg {
+  filter: drop-shadow(0px 5px 10px #444444);
+
+  border-top-left-radius: var(--corner-rad);
+  border-top-right-radius: var(--corner-rad);
+  margin-bottom: 30px;
+
+  min-width: 100%;
+}
+
+.sdish {
+  font-size: 20pt;
+  color:#333333;
+  margin-left: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.sprice {
+  font-size: 20pt;
+  font-weight: bold;
+  color: #ee9972;
+  margin-right: 1rem;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.sdesc {
+  font-size: 14pt;
+  color:#333333;
+
+  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+}
+
 
 #testimonials {
   grid-area: testimonials;
