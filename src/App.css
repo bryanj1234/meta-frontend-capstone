@@ -106,8 +106,7 @@ main {
 
   display: grid;
 
-  /* grid-template-rows: 383px 869px 590px 515px; */
-  grid-template-rows: 383px 700px 590px 100px;
+  grid-template-rows: 383px 700px 530px 100px;
   grid-template-columns: 1fr;
   grid-template-areas:
       "hero"
@@ -210,12 +209,11 @@ main {
 
 #specials {
   grid-area: specials;
-  padding-top: 10px;
 
   align-items: center;
 
   display: grid;
-  grid-template-rows: 60px 600px;
+  grid-template-rows: auto;
   grid-template-columns: 50px 400px 100px 1fr 50px;
   grid-template-areas:
       "_1 hdr _2 btn-order _3"
@@ -306,7 +304,6 @@ main {
   font-weight: bold;
   color:#333333;
   margin-left: 1rem;
-  /* margin-bottom: 1rem; */
 }
 
 .sprice {
@@ -329,30 +326,21 @@ main {
 
 #testimonials {
   grid-area: testimonials;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 0px;
 
   background-color: #495e57;
-
-  align-items: center;
-
   display: grid;
-  grid-template-rows: 60px 600px;
+  grid-template-rows: auto;
   grid-template-columns: 50px 1fr;
   grid-template-areas:
       "_1 hdr"
       "_1 gallery";
-
-  row-gap: 0px;
-
-  --js: left;
 }
 
 @media screen and (max-width: 900px) {
   #testimonials  {
     grid-template-columns: 10px 1fr;
-
-    --js: right;
   }
 }
 
@@ -367,14 +355,17 @@ main {
 #testimonials-gallery {
   grid-area: gallery;
 
+  height:380px;
+
   display: flex;
+  flex-direction: row;
   overflow-x: auto;
 }
 
 .tcard {
   margin-right: 20px;
   min-width:300px;
-  height:300px;
+  height: 90%;
 
   background-color: #ffffff;
   border-radius: var(--corner-rad);
@@ -387,13 +378,14 @@ main {
   font-weight: bold;
   color:#333333;
   margin-left: 1rem;
-  /* margin-bottom: 1rem; */
+  margin-top:1rem;
 }
 
 .t-review {
   font-size: 14pt;
   color:#333333;
 
+  margin-top:0.5rem;
   margin-left: 2rem;
   margin-right: 1rem;
   margin-bottom: 1rem;

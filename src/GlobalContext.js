@@ -66,7 +66,7 @@ const tmpContext = {
   'testimonials':[
     {'key':1,
       'title':'Review #1',
-      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
+      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
 
     {'key':2,
       'title':'Review #2',
@@ -74,7 +74,7 @@ const tmpContext = {
 
     {'key':3,
       'title':'Review #3',
-      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus.'},
+      'review':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus. Lorem ipsum dolor sit amet adipi elit. Aliquam sed cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed cursus. Lorem ipsum dolor sit amet,...'},
 
     {'key':4,
       'title':'Review #4',
