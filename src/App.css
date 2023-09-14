@@ -106,7 +106,7 @@ main {
 
   display: grid;
 
-  grid-template-rows: 383px 640px 525px 1fr;
+  grid-template-rows: auto;
   grid-template-columns: 1fr;
   grid-template-areas:
       "hero"
