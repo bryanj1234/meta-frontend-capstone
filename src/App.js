@@ -12,7 +12,7 @@ import {Footer} from './components/Footer';
 import {Specials} from './components/Specials';
 import {Testimonials} from './components/Testimonials';
 import {Reserve} from './components/Reserve';
-import {Order} from './components/Order';
+import {BookingPage} from './components/BookingPage';
 
 function App() {
   const GC = useGC();
@@ -40,7 +40,7 @@ function App() {
 
   const thereservations = <Reserve></Reserve>
 
-  const theorders = <Order></Order>
+  const theorders = <BookingPage></BookingPage>
 
   return (
     <>

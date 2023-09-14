@@ -1,4 +1,4 @@
-export const Order = () => {
+export const BookingPage = () => {
 
   return (
     <div id = "order">
