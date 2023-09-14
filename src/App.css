@@ -106,7 +106,7 @@ main {
 
   display: grid;
 
-  grid-template-rows: 383px 640px 525px 1fr;
+  grid-template-rows: 383px 640px 525px 500px;
   grid-template-columns: 1fr;
   grid-template-areas:
       "hero"
@@ -408,7 +408,7 @@ main {
   grid-template-columns: 50px 1fr 300px;
   grid-template-areas:
       "_1 hdr hdr"
-      "_1 ab-text ab-iamges";
+      "_1 ab-text ab-images";
 }
 
 @media screen and (max-width: 900px) {
@@ -457,6 +457,18 @@ main {
   margin-left: 4rem;
   margin-right: 4rem;
   margin-bottom: 2rem;
+}
+
+#ai-wrapper {
+  grid-area: ab-images;
+}
+
+#ai1 {
+  width:300px;
+}
+
+#ai2 {
+  width:300px;
 }
 
 

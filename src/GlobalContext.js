@@ -10,6 +10,9 @@ import special_bruschetta from './assets/special_bruschetta.jpg';
 import special_lemon_dessert from './assets/special_lemon_dessert.jpg';
 import special_placeholder from './assets/special_placeholder.jpg';
 
+import about_image_1 from './assets/Mario and Adrian A.jpg';
+import about_image_2 from './assets/restaurant_chef_B.jpg';
+
 
 const tmpContext = {
   'logo':logo,
@@ -101,6 +104,9 @@ const tmpContext = {
     {'key':4, 'url':'#TBD', 'title':'social #4'},
     {'key':5, 'url':'#TBD', 'title':'social #5'},
   ],
+
+  'about_image_1':about_image_1,
+  'about_image_2':about_image_2,
 };
 export const GlobalContext = createContext(tmpContext);
 
