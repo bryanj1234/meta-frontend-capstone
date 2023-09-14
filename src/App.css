@@ -347,6 +347,11 @@ main {
   padding-bottom: 20px;
 }
 
+#about h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40pt;
+}
+
 footer {
   grid-area: footer;
   padding-top: 20px;
