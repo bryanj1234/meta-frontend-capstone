@@ -4,6 +4,7 @@ import {useGC} from './GlobalContext';
 
 import {Routes, Route} from 'react-router-dom';
 import {BrowserRouter} from 'react-router-dom';
+import {Link} from "react-router-dom";
 
 import {Header} from './components/Header';
 import {Main, Section, About} from './components/Main';
@@ -19,12 +20,12 @@ function App() {
         <h2>Detroit</h2>
         <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
         <img src={GC.header_image} alt={"header_image"}/>
-        <span id="btn-reserve">Reserve a table</span>
+        <span id="btn-reserve"><Link to="Reservations">Reserve a table</Link></span>
       </Section>
 
   const thespecials = <Section id="specials">
     <h1>Specials</h1>
-    <span id="btn-order">Order online</span>
+    <span id="btn-order"><Link to="Order_online">Order online</Link></span>
     <Specials specials={GC.specials}></Specials>
   </Section>
 
