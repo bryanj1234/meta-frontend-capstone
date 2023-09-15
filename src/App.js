@@ -1,5 +1,7 @@
 import './App.css';
 
+import { useState } from "react";
+
 import {useGC} from './GlobalContext';
 
 import {Routes, Route} from 'react-router-dom';
@@ -16,6 +18,18 @@ import {Order} from './components/Order';
 
 function App() {
   const GC = useGC();
+
+  const [availableTimes, _] = useState(
+    [
+      "",
+      "17:00",
+      "18:00",
+      "19:00",
+      "20:00",
+      "21:00",
+      "22:00",
+    ]
+  );
 
   const thehero =  <Section id="hero">
         <h1>Little Lemon</h1>
@@ -38,11 +52,12 @@ function App() {
 
   const theabout = <About></About>
 
-  const thereservations = <BookingPage></BookingPage>
+  const thereservations = <BookingPage availableTimes={availableTimes}></BookingPage>
 
   const theorders = <Order></Order>
 
   return (
+
     <>
 
       <BrowserRouter>
