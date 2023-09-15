@@ -7,6 +7,18 @@ export const BookingForm = () => {
   const [visitNumber, setVisitNumber] = useState(1);
   const [occasion, setOccasion] = useState("No special occasion");
 
+  const [availableTimes, _] = useState(
+    [
+      "",
+      "17:00",
+      "18:00",
+      "19:00",
+      "20:00",
+      "21:00",
+      "22:00",
+    ]
+  );
+
   function visitDateChange(e) {
     setVisitDate(e.target.value);
   }
@@ -67,13 +79,9 @@ export const BookingForm = () => {
         <select className={visitTime != "" ? "Field" : "InvalidField"} id="res-time"
           value={visitTime} onChange={visitTimeChange}
         >
-            <option></option>
-            <option>17:00</option>
-            <option>18:00</option>
-            <option>19:00</option>
-            <option>20:00</option>
-            <option>21:00</option>
-            <option>22:00</option>
+            {availableTimes.map(
+              (a_time) => <option key={a_time}>{a_time}</option>
+            )}
         </select>
         <sup className={visitTime != "" ? "" : "fixit"}>*</sup>
         </span>
