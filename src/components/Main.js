@@ -36,7 +36,7 @@ export const Section = (props) => {
   )
 }
 
-export const Main = (props) => {
+export const Main = () => {
 
   const GC = useGC();
 
