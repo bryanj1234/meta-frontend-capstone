@@ -1,6 +1,6 @@
 import {useGC} from '../GlobalContext';
 
-import { useReducer, useState } from "react";
+import { useReducer } from "react";
 
 import {Routes, Route} from 'react-router-dom';
 import {Link} from "react-router-dom";
