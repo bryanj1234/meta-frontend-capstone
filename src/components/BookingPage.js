@@ -13,6 +13,7 @@ export const BookingForm = (props) => {
 
   function visitDateChange(e) {
     setVisitDate(e.target.value);
+    props.dateChangeDispatch();
   }
 
   function visitTimeChange(e) {
@@ -115,7 +116,10 @@ export const BookingPage = (props) => {
 
       <h1>Plan your dining experience</h1>
 
-      <BookingForm availableTimes={props.availableTimes}></BookingForm>
+      <BookingForm
+        dateChangeDispatch = {props.reducerDispatch}
+        availableTimes={props.reducerState.availableTimes}
+      ></BookingForm>
 
     </div>
   )

@@ -1,6 +1,7 @@
 import {useGC} from '../GlobalContext';
 
-import { useState } from "react";
+import { useReducer, useState } from "react";
+
 import {Routes, Route} from 'react-router-dom';
 import {Link} from "react-router-dom";
 import {Specials} from './Specials';
@@ -40,8 +41,16 @@ export const Main = () => {
 
   const GC = useGC();
 
-  const [availableTimes, _] = useState(
-    [
+  const updateTimes = () => {
+    return [
+      "",
+      "17:00",
+      "18:00",
+    ];
+  }
+
+  const initializeTimes = () => {
+    return [
       "",
       "17:00",
       "18:00",
@@ -49,8 +58,16 @@ export const Main = () => {
       "20:00",
       "21:00",
       "22:00",
-    ]
-  );
+    ];
+  }
+
+  function dateChangeReducer(timeState, _) {
+    return { visitDate: "", availableTimes: updateTimes() }
+  }
+
+  const [reducerState, reducerDispatch] = useReducer(dateChangeReducer,
+    { visitDate: "", availableTimes: initializeTimes() })
+  ;
 
   const thehero =  <Section id="hero">
         <h1>Little Lemon</h1>
@@ -73,7 +90,10 @@ export const Main = () => {
 
   const theabout = <About></About>
 
-  const thereservations = <BookingPage availableTimes={availableTimes}></BookingPage>
+  const thereservations = <BookingPage
+                            reducerState={reducerState}
+                            reducerDispatch={reducerDispatch}>
+                          </BookingPage>
 
   const theorders = <Order></Order>
 
