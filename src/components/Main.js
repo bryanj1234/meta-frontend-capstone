@@ -65,8 +65,7 @@ export const Main = () => {
     return {availableTimes: updateTimes()}
   }
 
-  const [reducerState, reducerDispatch] = useReducer(dateChangeReducer,
-    {availableTimes: initializeTimes()})
+  const [reducerState, reducerDispatch] = useReducer(dateChangeReducer, {availableTimes: initializeTimes()})
   ;
 
   const thehero =  <Section id="hero">
