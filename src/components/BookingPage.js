@@ -13,11 +13,17 @@ export const BookingForm = (props) => {
 
   function visitDateChange(e) {
     setVisitDate(e.target.value);
-    props.dateChangeDispatch();
+    props.dateChangeDispatch(e.target.value);
+
+    setVisitTime("");
+
+    getIsFormValid();
   }
 
   function visitTimeChange(e) {
     setVisitTime(e.target.value);
+
+    getIsFormValid();
   }
 
   function visitNumberChange(e) {
@@ -32,9 +38,14 @@ export const BookingForm = (props) => {
   }
 
   function getIsFormValid() {
+    // console.log("AAA: " + visitDate);
+    // console.log("AAA: " + visitTime);
+    // console.log("AAA: " + visitNumber);
+    // console.log("");
+
     return (
       visitDate != initVisitDate
-            && visitTime != initVisitDate
+            && visitTime != initVisitTime
             && (visitNumber > 0  && visitNumber < 11)
     );
   }

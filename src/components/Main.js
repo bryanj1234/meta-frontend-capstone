@@ -37,24 +37,41 @@ export const Section = (props) => {
   )
 }
 
+export function fetchAPI(date) {
+  console.log(date);
 
-export const updateTimes = () => {
-  return [
-    "",
-    "17:00",
-    "18:00",
-  ];
+  if(date == "") {
+    return [""];
+
+  } else {
+
+    const list = [
+      "",
+      "17:00",
+      "18:00",
+      "19:00",
+      "20:00",
+      "21:00",
+      "22:00",
+    ];
+
+    return list;
+
+  }
+
+}
+
+export function submitAPI() {
+  return true;
+}
+
+export const updateTimes = (date) => {
+  return fetchAPI(date);
 }
 
 export const initializeTimes = () => {
   return [
-    "",
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
+    ""
   ];
 }
 
@@ -62,11 +79,17 @@ export const Main = () => {
 
   const GC = useGC();
 
-  function dateChangeReducer(visitDate, _) {
-    return {availableTimes: updateTimes()}
+  function dateChangeReducer(curState, newDate) {
+    // console.log(curState);
+    // console.log(newDate);
+
+    return {availableTimes: updateTimes(newDate)}
   }
 
-  const [reducerState, reducerDispatch] = useReducer(dateChangeReducer, {availableTimes: initializeTimes()})
+  const [reducerState, reducerDispatch] = useReducer(dateChangeReducer,
+                                          {
+                                            availableTimes: initializeTimes()
+                                          })
   ;
 
   const thehero =  <Section id="hero">
