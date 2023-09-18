@@ -30,7 +30,6 @@ export const BookingForm = (props) => {
     setOccasion(e.target.value);
   }
 
-
   function getIsFormValid() {
     return (
       visitDate != initVisitDate
