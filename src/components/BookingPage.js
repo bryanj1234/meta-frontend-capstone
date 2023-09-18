@@ -2,10 +2,14 @@ import { useState, useEffect } from "react";
 
 export const BookingForm = (props) => {
 
-  const [visitDate, setVisitDate] = useState("");
-  const [visitTime, setVisitTime] = useState("");
+  const initVisitDate = "";
+  const initVisitTime = "";
+  const initOccasion = "No special occasion";
+
+  const [visitDate, setVisitDate] = useState(initVisitDate);
+  const [visitTime, setVisitTime] = useState(initVisitTime);
   const [visitNumber, setVisitNumber] = useState(1);
-  const [occasion, setOccasion] = useState("No special occasion");
+  const [occasion, setOccasion] = useState(initOccasion);
 
   function visitDateChange(e) {
     setVisitDate(e.target.value);
@@ -16,7 +20,10 @@ export const BookingForm = (props) => {
   }
 
   function visitNumberChange(e) {
-    setVisitNumber(e.target.value);
+    let visitNumber = parseInt(e.target.value);
+    visitNumber = isNaN(visitNumber) ? 0 : visitNumber;
+    setVisitNumber(visitNumber);
+    getIsFormValid();
   }
 
   function occasionChange(e) {
@@ -25,17 +32,14 @@ export const BookingForm = (props) => {
 
 
   function getIsFormValid() {
-    return visitDate;
+    return (
+      visitDate != initVisitDate
+            && visitTime != initVisitDate
+            && (visitNumber > 0  && visitNumber < 11)
+    );
   }
 
-  const clearForm = () => {
-    setVisitDate("");
-    setVisitTime("");
-    //setVisitNumber("");
-  };
-
   useEffect(() => {
-    clearForm();
     getIsFormValid();
   }, []);
 
@@ -57,7 +61,8 @@ export const BookingForm = (props) => {
         <span>
         <label htmlFor="res-date">Choose date</label>
         <input className={visitDate != "" ? "Field" : "InvalidField"} type="date" id="res-date"
-          value={visitDate} onChange={visitDateChange}
+          value={visitDate}
+          onChange={visitDateChange}
         />
         <sup className={visitDate != "" ? "" : "fixit"}>*</sup>
         </span>
@@ -65,7 +70,8 @@ export const BookingForm = (props) => {
         <span>
         <label htmlFor="res-time">Choose time</label>
         <select className={visitTime != "" ? "Field" : "InvalidField"} id="res-time"
-          value={visitTime} onChange={visitTimeChange}
+          value={visitTime}
+          onChange={visitTimeChange}
         >
             {props.availableTimes.map(
               (a_time) => <option key={a_time}>{a_time}</option>
@@ -76,9 +82,12 @@ export const BookingForm = (props) => {
 
         <span>
         <label htmlFor="guests">Number of guests</label>
-        <input className="Field" type="number" placeholder="1" min="1" max="10" id="guests"
-          value={visitNumber} onChange={visitNumberChange}
+        <input className={(visitNumber > 0  && visitNumber < 11) ? "Field" : "InvalidField"}
+          type="number" placeholder="10" min="1" max="10" id="guests"
+          value={visitNumber}
+          onChange={visitNumberChange}
         />
+        <sup className={(visitNumber > 0  && visitNumber < 11) ? "" : "fixit"}>*</sup>
         </span>
 
         <span>
