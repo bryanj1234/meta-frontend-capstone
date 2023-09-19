@@ -429,16 +429,16 @@ main {
 
 @media screen and (max-width: 900px) {
   #about  {
-    grid-template-columns: 10px 300px 50px 50px 1fr 10px;
+    grid-template-columns: 10px 300px 50px 50px 1fr;
     grid-template-areas:
-    "_1 hdr hdr hdr hdr hdr"
-    "ab-text ab-text ab-text ab-text ab-text _3"
-    "ab-text ab-text ab-text ab-text ab-text _3"
-    "ab-text ab-text ab-text ab-text ab-text _3"
-    "ab-text ab-text ab-text ab-text ab-text _3"
-    "ab-text ab-text ab-text ab-text ab-text _3"
-    "ab-text ab-text ab-text ab-text ab-text _3"
-    "ab-text ab-text ab-text ab-text ab-text _3";
+    "_1 hdr hdr hdr hdr"
+    "ab-text ab-text ab-text ab-text im"
+    "ab-text ab-text ab-text ab-text im"
+    "ab-text ab-text ab-text ab-text im"
+    "ab-text ab-text ab-text ab-text im"
+    "ab-text ab-text ab-text ab-text im"
+    "ab-text ab-text ab-text ab-text im"
+    "ab-text ab-text ab-text ab-text im";
   }
 }
 
@@ -505,14 +505,14 @@ main {
   #ai1 {
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 6;
-    grid-column-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 5;
   }
   #ai2 {
     grid-row-start: 4;
     grid-row-end: 5;
-    grid-column-start: 6;
-    grid-column-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 5;
   }
 }
 
