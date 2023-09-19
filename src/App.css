@@ -610,7 +610,7 @@ footer a:hover {
 
 #reserve {
   width:100%;
-  padding: 3rem;
+  padding-top: 2rem;
 
   display:grid;
   grid-template-rows: 123px 1fr 50px;
@@ -620,6 +620,12 @@ footer a:hover {
       "_1 area2 _2"
       "_1 area3 _2";
   justify-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  #reserve {
+    grid-template-columns: 10px 1fr 50px;
+  }
 }
 
 #reserve h1 {
@@ -634,6 +640,12 @@ footer a:hover {
 @media screen and (max-width: 900px) {
   #reserve h1 {
     font-size: 32pt;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #reserve h1 {
+    font-size: 24pt;
   }
 }
 
