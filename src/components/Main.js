@@ -38,8 +38,6 @@ export const Section = (props) => {
 }
 
 export function fetchAPI(date) {
-  console.log(date);
-
   if(date == "") {
     return [""];
 
